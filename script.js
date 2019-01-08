@@ -30,7 +30,7 @@ function draw(e) {
 	context.lineTo(e.offsetX, e.offsetY);
 	context.stroke();
 	[lastX, lastY] = [e.offsetX, e.offsetY];
-	hue++;
+	hue += 0.5;
 }
 
 canvas.addEventListener("mousemove", draw);
